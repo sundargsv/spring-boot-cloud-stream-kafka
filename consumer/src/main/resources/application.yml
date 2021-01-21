@@ -1,0 +1,13 @@
+
+spring:
+  cloud:
+    stream:
+      bindings:
+#        output:
+#          destination: intl_tax_reporting_scope_dev
+        input:
+          destination: test_dev
+      kafka:
+        binder:
+          replication-factor: 1
+          brokers: 35.189.15.134:9092

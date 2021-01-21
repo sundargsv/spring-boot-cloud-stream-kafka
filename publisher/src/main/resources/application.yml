@@ -1,0 +1,13 @@
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: test_dev
+#        input:
+#          destination: update_process_measurement_dev
+      kafka:
+        binder:
+          replication-factor: 1
+          brokers: 35.189.15.134:9092
